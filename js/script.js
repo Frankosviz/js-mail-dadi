@@ -1,11 +1,11 @@
 // ESERCIZIO DI OGGI
 
-// Mail 
+// MAIL 
 // Chiedi all utente la sua Email
 // controlla che sia nella list di chi può accedere
 // stampa un messaggio appropriato sul esito del controllo
 
-// Dadi
+// DADI
 // generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 // ()
@@ -24,80 +24,61 @@
 // Nota - Non funzionano le chiocciole delle email, quando clicco mi fanno scomparire il testo stampato in html.
 // Associamo il nostro bottone su html con javascript
 
-//     const button = document.querySelector('.email');
-//     console.log(button);
+     const button = document.querySelector('.email');
+     console.log(button);
 
-// // Creiamo la funzione associata al click
+//  Creiamo la funzione associata al click
 
-//      button.addEventListener('click', function(){
+      button.addEventListener('click', function(){
 
 // // //  Dichiariamo un array con le email valide per l'accesso
 
-//      let trueEmail = ['leo@gmail.com', 'ale@gmail.com', 'alex@gmail.com', 'aless@gmail.com', 'ledio@gmail.com'];
-//      console.log(trueEmail);
+      let trueEmail = ['leo@gmail.com', 'ale@gmail.com', 'alex@gmail.com', 'aless@gmail.com', 'ledio@gmail.com'];
+      console.log(trueEmail);
      
 // // //  L'utente ci scrive la sua email, prendiamo il valore tramite value
 
-//      let userWord = document.getElementById('userValue').value;
-//      console.log(userWord);
+      let userWord = document.getElementById('userValue').value;
+      console.log(userWord);
 
 // //     // Confrontiamo la email che mi ha dato l'utente con tutte le email che ho nell'array-true
 
 // //     // Quindi creiamo una variabile
 
-//      let finded = false;
+      let finded = false;
 
 // //     // Andiamo a confrontare il tutto con il ciclo for
 
-//      for(let i = 0; i < trueEmail.length; i++){
-//         if(userWord.toLowerCase() === trueEmail[i].toLowerCase()){ 
-//         finded = true;
-//         }
-//     }
+      for(let i = 0; i < trueEmail.length; i++){
+         if(userWord.toLowerCase() === trueEmail[i].toLowerCase()){ 
+         finded = true;
+         }
+     }
 
-//     const result = document.getElementById('result')
+     const result = document.getElementById('result')
 
-//      if(finded === true){
-//          result.innerHTML = 'Perfetto, puoi accedere alla tua Email! :)';
-//      } else {
-//          result.innerHTML = 'Accesso negato, inserisci i dati correttamente';
-//      }
-// })
+      if(finded === true){
+          result.innerHTML = 'Perfetto, puoi accedere alla tua Email! :)';
+      } else {
+          result.innerHTML = 'Accesso negato, inserisci i dati correttamente';
+      }
+ })
 
 // Dadi - Procedimento....
 
- const buttonDadi = document.querySelector('.dadi');
+  const buttonDadi = document.querySelector('.dadi');
 
- buttonDadi.addEventListener('click', function(){
-    let numeriRandom = ['1', '2', '3', '4', '5', '6'];
-    console.log(numeriRandom);
-    let numeriDaInserire = 6;
-    getRndInteger(min, max) //- Funzione per numeri random
-
-    for(let i = 0; i < 6; i++){
-    numeriRandom.push(getRndInteger(1, 6));
-    console.log(numeriRandom);
- }
-
- })
+  buttonDadi.addEventListener('click', function(){
+     let numeriRandom = [];
+     console.log(numeriRandom);
+     let numeriDaInserire = 6;
 
 
+     for(let i = 0; i < 6; i++){
+     numeriRandom.push(getRndInteger('1', '6'));
+     console.log(numeriRandom);
+  }
 
+  })
 
- // Altro Esercizio
-
-
-// let numeriRandom = [];
-
-// let numeriDaInserire = 10;
-
-// // Vogliamo mettere dentro questo array 10 numeri creati randomicamente
-
-// // getRndInteger(min, max) - Funzione per numeri random
-
-// for(let i = 0; i < 10; i++){
-//     numeriRandom.push(getRndInteger(1, 100));
-// }
-
-// console.log(numeriRandom);
 
