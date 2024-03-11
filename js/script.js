@@ -14,13 +14,13 @@
 // Schiaccio email e spunta laltro
 // Schiaccio i bottoni e gioco ai dadi
 
--
+// -
 
-Mail
-Inizio creando un input nell' html con un bottone
-Dall'input mi ricavo l'email dell'utente tramite il click del bottone
-Creo una variabile list con le condizioni che, se vere, daranno la possibilità di far accedere l'utente
-(Immaginiamo che l'utente voglia accedere alla pagina gmail con la propria mail avendone create più di una)
+// Mail
+// Inizio creando un input nell' html con un bottone
+// Dall'input mi ricavo l'email dell'utente tramite il click del bottone
+// Creo una variabile list con le condizioni che, se vere, daranno la possibilità di far accedere l'utente
+// (Immaginiamo che l'utente voglia accedere alla pagina gmail con la propria mail avendone create più di una)
 
 // Associamo il nostro bottone su html con javascript
 
@@ -33,16 +33,17 @@ Creo una variabile list con le condizioni che, se vere, daranno la possibilità 
 //  Dichiariamo un array con le email valide per l'accesso
 
     let trueEmail = ['leo@gmail.com', 'ale@gmail.com', 'alex@gmail.com', 'aless@gmail.com', 'ledio@gmail.com'];
-    
+    console.log(trueEmail);
 //  L'utente ci scrive la sua email, prendiamo il valore tramite value
 
     let userWord = document.getElementById('userValue').value;
+    console.log(userWord);
 
     // Confrontiamo la email che mi ha dato l'utente con tutte le email che ho nell'array-true
 
     // Quindi creiamo una variabile
 
-    let trovato = false;
+    let finded = false;
 
     // Andiamo a confrontare il tutto con il ciclo for
 
@@ -51,25 +52,37 @@ Creo una variabile list con le condizioni che, se vere, daranno la possibilità 
     // Facciamo il confronto tra userWord e trovato
 
     if(userWord === trueEmail[i]){
-        trovato = true;
+        finded = true;
+    } else {
+        finded = false;
     }
  }
     const result = document.getElementById('result');
-    if(trovato){
+
+    if(finded){
     console.log('Perfetto, puoi accedere alla tua Email!');
     result.innerHTML = 'Questo è disponibile :)';
  }  else {
     console.log('Accesso negato, inserisci i dati correttamente');
  }
+ }
+ )
 
- const result = document.getElementById('result')
+
+//     const result = document.getElementById('result');
+//     if(finded){
+//     console.log('Perfetto, puoi accedere alla tua Email!');
+//     result.innerHTML = 'Questo è disponibile :)';
+//  }  else {
+//     console.log('Accesso negato, inserisci i dati correttamente');
+//  }
 //     if(trovato){
 //         result.innerHTML = 'Questo è disponibile :)';
 //     } else {
 //         result.innerHTML = 'Non è disponibile :(';
 //     }
 
- }
+ 
 
 
 

@@ -283,25 +283,25 @@
 //  }
 
 
-ESERCIZIO DI OGGI
+// ESERCIZIO DI OGGI
 
-Mail 
-Chiedi all utente la sua Email
-controlla che sia nella list di chi può accedere
-stampa un messaggio appropriato sul esito del controllo
+// Mail 
+// Chiedi all utente la sua Email
+// controlla che sia nella list di chi può accedere
+// stampa un messaggio appropriato sul esito del controllo
 
-Dadi
-generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-Stabilire il vincitore, in base a chi fa il punteggio più alto.
-()
-Raccogliere tutto sui click del bottone
-Saranno due bottoni
-Schiaccio email e spunta laltro
-Schiaccio i bottoni e gioco ai dadi
+// Dadi
+// generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+// ()
+// Raccogliere tutto sui click del bottone
+// Saranno due bottoni
+// Schiaccio email e spunta laltro
+// Schiaccio i bottoni e gioco ai dadi
 
--
+// -
 
-Mail
-Inizio creando un input nel html con un bottone
-Dall'input mi ricavo l'email dell'utente tramite il click del bottone
-Creo una variabile list con tutte le persone che possono accedere
+// Mail
+// Inizio creando un input nel html con un bottone
+// Dall'input mi ricavo l'email dell'utente tramite il click del bottone
+// Creo una variabile list con tutte le persone che possono accedere
