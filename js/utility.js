@@ -298,3 +298,10 @@ Raccogliere tutto sui click del bottone
 Saranno due bottoni
 Schiaccio email e spunta laltro
 Schiaccio i bottoni e gioco ai dadi
+
+-
+
+Mail
+Inizio creando un input nel html con un bottone
+Dall'input mi ricavo l'email dell'utente tramite il click del bottone
+Creo una variabile list con tutte le persone che possono accedere
