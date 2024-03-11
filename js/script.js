@@ -17,19 +17,75 @@
 -
 
 Mail
-Inizio creando un input nel html con un bottone
+Inizio creando un input nell' html con un bottone
 Dall'input mi ricavo l'email dell'utente tramite il click del bottone
 Creo una variabile list con le condizioni che, se vere, daranno la possibilità di far accedere l'utente
 (Immaginiamo che l'utente voglia accedere alla pagina gmail con la propria mail avendone create più di una)
- let text = ['Tavolo',];
 
-// Dichiariamo un array con delle parole
+// Associamo il nostro bottone su html con javascript
 
-// let trueEmail = ['leo@gmail.com', 'ale@gmail.com', 'alex@gmail.com', 'aless@gmail.com', 'ledio@gmail.com'];
+    const button = document.querySelector('.btn');
 
-// // L'utente ci indica una parola
+// Creiamo la funzione associata al click
 
-//    let userWord = document.getElementById('userValue').value;
+    button.addEventListener('click', function(){
+
+//  Dichiariamo un array con le email valide per l'accesso
+
+    let trueEmail = ['leo@gmail.com', 'ale@gmail.com', 'alex@gmail.com', 'aless@gmail.com', 'ledio@gmail.com'];
+    
+//  L'utente ci scrive la sua email, prendiamo il valore tramite value
+
+    let userWord = document.getElementById('userValue').value;
+
+    // Confrontiamo la email che mi ha dato l'utente con tutte le email che ho nell'array-true
+
+    // Quindi creiamo una variabile
+
+    let trovato = false;
+
+    // Andiamo a confrontare il tutto con il ciclo for
+
+    for(let i = 0; i < trueEmail.length; i++){
+
+    // Facciamo il confronto tra userWord e trovato
+
+    if(userWord === trueEmail[i]){
+        trovato = true;
+    }
+ }
+    const result = document.getElementById('result');
+    if(trovato){
+    console.log('Perfetto, puoi accedere alla tua Email!');
+    result.innerHTML = 'Questo è disponibile :)';
+ }  else {
+    console.log('Accesso negato, inserisci i dati correttamente');
+ }
+
+ const result = document.getElementById('result')
+//     if(trovato){
+//         result.innerHTML = 'Questo è disponibile :)';
+//     } else {
+//         result.innerHTML = 'Non è disponibile :(';
+//     }
+
+ }
+
+
+
+
+
+
+
+
+
+//  Dichiariamo un array con le email valide per l'accesso
+
+    let trueEmail = ['leo@gmail.com', 'ale@gmail.com', 'alex@gmail.com', 'aless@gmail.com', 'ledio@gmail.com'];
+
+//  L'utente ci indica scrive la sua email
+
+    let userWord = document.getElementById('userValue').value;
 
 // // Confrontiamo la parola che mi ha dato l'utente con tutte le parole che ho nell'array
 
