@@ -21,7 +21,6 @@
 // Dall'input mi ricavo l'email dell'utente tramite il click del bottone
 // Creo una variabile list con le condizioni che, se vere, daranno la possibilità di far accedere l'utente
 // (Immaginiamo che l'utente voglia accedere alla pagina gmail con la propria mail avendone create più di una)
-// Nota - Non funzionano le chiocciole delle email, quando clicco mi fanno scomparire il testo stampato in html.
 // Associamo il nostro bottone su html con javascript
 
      const button = document.querySelector('.email');
@@ -69,16 +68,11 @@
   const buttonDadi = document.querySelector('.dadi');
 
   buttonDadi.addEventListener('click', function(){
-     let numeriRandom = [];
-     console.log(numeriRandom);
-     let numeriDaInserire = 6;
 
-
-     for(let i = 0; i < 6; i++){
-     numeriRandom.push(getRndInteger('1', '6'));
-     console.log(numeriRandom);
-  }
-
-  })
+     let userNumber = getRndInteger(1, 6);
+     console.log(numeriNumber);
+     let computerNumber = getRndInteger(1, 6);
+     console.log(computerNumber);
+  });
 
 
