@@ -68,11 +68,21 @@
   const buttonDadi = document.querySelector('.dadi');
 
   buttonDadi.addEventListener('click', function(){
-
-     let userNumber = getRndInteger(1, 6);
+      let output = document.getElementById('resultDadiUser')
+     output.innerHTML = ''
+      let userNumber = getRndInteger(1, 6);
      console.log(numeriNumber);
-     let computerNumber = getRndInteger(1, 6);
-     console.log(computerNumber);
+     let pcNumber = getRndInteger(1, 6);
+     console.log(pcNumber);
+     if(userNumber < pcNumber){
+      console.log('User ha vinto')
+     } else if (userNumber > pcNumber){
+      console.log('Pc ha vinto')
+     } else {     
+      console.log('Avete pareggiato')
+     }
   });
+
+
 
 
